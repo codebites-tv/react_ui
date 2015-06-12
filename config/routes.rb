@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'main#index'
   mount Converter::Currency => '/api'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
